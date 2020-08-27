@@ -1,0 +1,27 @@
+{
+  "name": "coffee-machine",
+  "version": "1.0.0",
+  "description": "Coffee machine simulator",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^8.1.2",
+    "nyc": "^15.1.0"
+  },
+  "scripts": {
+    "test": "nyc mocha --timeout=3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmaranSingh/coffee-machine.git"
+  },
+  "keywords": [
+    "JavaScript"
+  ],
+  "author": "Smaran Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SmaranSingh/coffee-machine/issues"
+  },
+  "homepage": "https://github.com/SmaranSingh/coffee-machine#readme"
+}
