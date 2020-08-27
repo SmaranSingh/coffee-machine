@@ -13,8 +13,13 @@ const getBeverageError = (total, beverages, beverageName, ingredientName) => {
 
   if (total[ingredientName] === undefined) {
     error = `${beverageName} cannot be prepared because ${ingredientName} is not available`;
-  } else if (total[ingredientName] >= beverages[beverageName][ingredientName]) {
-    total[ingredientName] -= beverages[beverageName][ingredientName];
+  } else if (
+    parseFloat(total[ingredientName]) >=
+    parseFloat(beverages[beverageName][ingredientName])
+  ) {
+    total[ingredientName] -= parseFloat(
+      beverages[beverageName][ingredientName]
+    );
   } else {
     error = `${beverageName} cannot be prepared because ${ingredientName} is not sufficient`;
   }
